@@ -5,6 +5,9 @@ class User:
         self.bio = the_bio
         self.username = usrname
 
+    def __str__(self):
+        return f"name: {self.username}, bio: {self.bio}"
+
     def get_username(self):
         return self.username
 
