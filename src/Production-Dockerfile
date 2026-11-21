@@ -1,0 +1,8 @@
+FROM alpine:3.24
+
+RUN apk add postgresql-client
+
+COPY checkstatus.sh .
+RUN chmod +x /checkstatus.sh
+
+CMD ["/checkstatus.sh"]
